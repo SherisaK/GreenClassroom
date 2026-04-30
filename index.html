@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,16 +69,16 @@
                                 <span className="font-bold text-xl tracking-tight text-emerald-900">The Green Classroom</span>
                             </div>
                             <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
-                                <a href="#problem" className="hover:text-emerald-600">Challenge</a>
-                                <a href="#solution" className="hover:text-emerald-600">Solution</a>
-                                <a href="#model" className="hover:text-emerald-600">Model</a>
-                                <a href="#contact" className="px-4 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 shadow-md">Partner With Us</a>
+                                <a href="#problem" className="hover:text-emerald-600 transition-colors">Challenge</a>
+                                <a href="#solution" className="hover:text-emerald-600 transition-colors">Solution</a>
+                                <a href="#model" className="hover:text-emerald-600 transition-colors">Model</a>
+                                <a href="#contact" className="px-4 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 shadow-md transition-all">Partner With Us</a>
                             </div>
                         </div>
                     </nav>
 
                     {/* Hero */}
-                    <header className="relative pt-32 pb-20 overflow-hidden bg-white">
+                    <header className="relative pt-40 pb-24 overflow-hidden bg-white">
                         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
                             <div className="space-y-8">
                                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -88,22 +88,26 @@
                                     Taking exams has <span className="text-emerald-600">never been greener.</span>
                                 </h1>
                                 <p className="text-xl text-slate-600 leading-relaxed max-w-xl">
-                                    Transforming education through innovative digital models. Reducing reliance on paper to protect our rainforests.
+                                    Transforming education through innovative digital models. Reducing reliance on paper to protect our rainforests and empower future generations.
                                 </p>
                                 <div className="flex gap-4">
-                                    <a href="#contact" className="px-8 py-4 bg-emerald-600 text-white rounded-xl font-bold shadow-lg hover:bg-emerald-700 flex items-center gap-2">
+                                    <a href="#contact" className="px-8 py-4 bg-emerald-600 text-white rounded-xl font-bold shadow-lg hover:bg-emerald-700 flex items-center gap-2 transition-all">
                                         Join Movement <Icon name="arrow-right" size={20} />
                                     </a>
                                 </div>
                             </div>
                             <div className="relative">
                                 <div className="bg-white p-6 rounded-[2.5rem] shadow-2xl border border-slate-100">
-                                    <div className="aspect-video bg-emerald-50 rounded-[1.5rem] flex items-center justify-center">
+                                    <div className="aspect-video bg-emerald-50 rounded-[1.5rem] flex items-center justify-center overflow-hidden group">
                                         <div className="text-center">
-                                            <Icon name="monitor" className="text-emerald-600 mx-auto mb-4" size={64} />
+                                            <Icon name="monitor" className="text-emerald-600 mx-auto mb-4 transition-transform group-hover:scale-110" size={64} />
                                             <h3 className="text-2xl font-bold text-slate-800 italic">"Learn Green. Test Green."</h3>
                                         </div>
                                     </div>
+                                </div>
+                                <div className="absolute -bottom-6 -left-6 bg-emerald-600 text-white p-6 rounded-2xl shadow-xl z-20">
+                                    <p className="text-sm font-medium opacity-80 uppercase tracking-widest">Founder</p>
+                                    <h4 className="text-xl font-bold">Ismal Rodriguez</h4>
                                 </div>
                             </div>
                         </div>
@@ -111,13 +115,13 @@
 
                     {/* Problem */}
                     <section id="problem" className="py-24 bg-slate-50">
-                        <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+                        <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center text-left">
                             <div className="space-y-6">
                                 <div className="inline-flex items-center gap-2 text-rose-600 font-bold uppercase text-sm tracking-widest">
                                     <Icon name="alert-triangle" size={16} /> The Crisis
                                 </div>
                                 <h2 className="text-4xl font-bold text-slate-900">Deforestation is destroying our future.</h2>
-                                <p className="text-lg text-slate-600">Rainforest destruction for paper is linked to global warming and rising sea levels.</p>
+                                <p className="text-lg text-slate-600">Rainforest destruction for paper manufacturing is directly linked to global warming, rising sea levels, and severe climate change.</p>
                                 <div className="p-6 bg-rose-50 border-l-4 border-rose-500 rounded-r-xl">
                                     <p className="text-rose-900 font-medium italic">"Small classroom changes create big future impacts."</p>
                                 </div>
@@ -125,9 +129,9 @@
                             <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="bg-rose-100 p-3 rounded-xl"><Icon name="trending-down" className="text-rose-600" /></div>
-                                    <h4 className="font-bold text-xl">Rising Sea Levels</h4>
+                                    <h4 className="font-bold text-xl text-slate-900">Environmental Impact</h4>
                                 </div>
-                                <p className="text-slate-500">A direct consequence of unchecked global warming and forest loss, threatening our coastal communities.</p>
+                                <p className="text-slate-500 leading-relaxed">By showing a significant reduction in paper usage, we promote a major benefit for global forest conservation efforts.</p>
                             </div>
                         </div>
                     </section>
@@ -135,31 +139,119 @@
                     {/* Methods */}
                     <section id="solution" className="py-24 bg-white">
                         <div className="max-w-7xl mx-auto px-4 text-center mb-16">
-                            <h2 className="text-4xl font-bold mb-4">Our Sustainable Methods</h2>
-                            <p className="text-slate-500">Leveraging technology for a seamless, paperless experience.</p>
+                            <h2 className="text-4xl font-bold mb-4 text-slate-900">Our Sustainable Methods</h2>
+                            <p className="text-slate-500 max-w-2xl mx-auto">Leveraging modern technology to create a seamless, paperless educational experience that doesn't compromise on learning quality.</p>
                         </div>
                         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-                            <div className="bg-emerald-50 p-10 rounded-[2.5rem] text-center border border-emerald-100">
+                            <div className="bg-emerald-50 p-10 rounded-[2.5rem] text-center border border-emerald-100 hover:shadow-xl transition-all">
                                 <Icon name="monitor" className="text-emerald-600 mb-6" size={48} />
-                                <h3 className="text-2xl font-bold mb-4">Digital Examinations</h3>
-                                <p className="text-slate-600">Secure, controlled environments using laptops to eliminate paper waste entirely.</p>
+                                <h3 className="text-2xl font-bold mb-4 text-emerald-900">Digital Examinations</h3>
+                                <p className="text-slate-600">Secure, controlled environments using laptops to eliminate paper waste entirely while improving grading speed and accuracy.</p>
                             </div>
-                            <div className="bg-emerald-50 p-10 rounded-[2.5rem] text-center border border-emerald-100">
+                            <div className="bg-emerald-50 p-10 rounded-[2.5rem] text-center border border-emerald-100 hover:shadow-xl transition-all">
                                 <Icon name="pen-tool" className="text-emerald-600 mb-6" size={48} />
-                                <h3 className="text-2xl font-bold mb-4">Electronic Note Pads</h3>
-                                <p className="text-slate-600">Students write, edit, and save work directly to cloud storage using electronic pens.</p>
+                                <h3 className="text-2xl font-bold mb-4 text-emerald-900">Electronic Note Pads</h3>
+                                <p className="text-slate-600">Students write, edit, and save work directly to cloud storage using electronic pens, maintaining the cognitive benefits of handwriting without the waste.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Business Model Section */}
+                    <section id="model" className="py-24 bg-slate-50">
+                        <div className="max-w-7xl mx-auto px-4">
+                            <div className="bg-emerald-900 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                                <div className="lg:w-1/3 p-12 space-y-6 text-left">
+                                    <h2 className="text-4xl font-bold text-white">Business Model</h2>
+                                    <p className="text-emerald-100/70">A scalable ecosystem designed for cross-sector impact in Guyana's educational landscape.</p>
+                                    <div className="space-y-4 pt-4">
+                                        <div className="flex items-center gap-3 text-white">
+                                            <Icon name="school" size={20} className="text-emerald-400" />
+                                            <span className="text-sm font-medium">Ministry of Education Partner</span>
+                                        </div>
+                                        <div className="flex items-center gap-3 text-white">
+                                            <Icon name="users" size={20} className="text-emerald-400" />
+                                            <span className="text-sm font-medium">University Collaborations</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lg:w-2/3 bg-white p-12 grid md:grid-cols-2 gap-10 text-left">
+                                    <div className="space-y-4">
+                                        <h4 className="font-bold text-emerald-900 uppercase text-xs tracking-widest border-b border-emerald-100 pb-2">Value Propositions</h4>
+                                        <ul className="space-y-3">
+                                            <li className="flex gap-3 text-sm text-slate-600"><Icon name="check-circle-2" size={16} className="text-emerald-500 shrink-0" /> Decrease global deforestation</li>
+                                            <li className="flex gap-3 text-sm text-slate-600"><Icon name="check-circle-2" size={16} className="text-emerald-500 shrink-0" /> Easier and faster exam marking</li>
+                                            <li className="flex gap-3 text-sm text-slate-600"><Icon name="check-circle-2" size={16} className="text-emerald-500 shrink-0" /> Reduced operational and printing costs</li>
+                                        </ul>
+                                    </div>
+                                    <div className="space-y-4">
+                                        <h4 className="font-bold text-emerald-900 uppercase text-xs tracking-widest border-b border-emerald-100 pb-2">Revenue Streams</h4>
+                                        <ul className="space-y-3">
+                                            <li className="flex gap-3 text-sm text-slate-600"><Icon name="check-circle-2" size={16} className="text-emerald-500 shrink-0" /> Partnership contributions</li>
+                                            <li className="flex gap-3 text-sm text-slate-600"><Icon name="check-circle-2" size={16} className="text-emerald-500 shrink-0" /> Government funding models</li>
+                                            <li className="flex gap-3 text-sm text-slate-600"><Icon name="check-circle-2" size={16} className="text-emerald-500 shrink-0" /> Grants & sustainable donations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Partner With Us Section */}
+                    <section id="contact" className="py-24 bg-white relative overflow-hidden">
+                        <div className="max-w-4xl mx-auto px-4 text-center space-y-12">
+                            <div className="space-y-4">
+                                <h2 className="text-5xl font-extrabold text-slate-900">The Big Ask</h2>
+                                <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                                    We are seeking strategic funding and partnerships to support the expansion of the <span className="font-bold text-emerald-600">Green Classroom</span> initiative.
+                                </p>
+                            </div>
+                            
+                            <div className="grid md:grid-cols-3 gap-6 text-left">
+                                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                                    <h4 className="font-bold text-lg mb-2 text-slate-900">Corporations</h4>
+                                    <p className="text-sm text-slate-500">Invest in sustainable education and strengthen your environmental impact.</p>
+                                </div>
+                                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                                    <h4 className="font-bold text-lg mb-2 text-slate-900">Environmental Orgs</h4>
+                                    <p className="text-sm text-slate-500">Expand your reach through our innovative digital classroom models.</p>
+                                </div>
+                                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                                    <h4 className="font-bold text-lg mb-2 text-slate-900">Gov Agencies</h4>
+                                    <p className="text-sm text-slate-500">Support sustainable development goals for a greener future.</p>
+                                </div>
+                            </div>
+
+                            <div className="bg-emerald-600 rounded-[2.5rem] p-10 text-white text-left shadow-2xl relative">
+                                <div className="grid md:grid-cols-2 gap-10 items-center">
+                                    <div className="space-y-6">
+                                        <h3 className="text-3xl font-bold leading-tight">Invest Today. Inspire Tomorrow.</h3>
+                                        <p className="text-emerald-50">Reach out to join our community of responsible innovators protecting our planet.</p>
+                                        <div className="space-y-3">
+                                            <div className="flex items-center gap-3"><Icon name="mail" size={20} className="opacity-70" /> info@greenclassroom.com</div>
+                                            <div className="flex items-center gap-3"><Icon name="smartphone" size={20} className="opacity-70" /> Guyana - Camille's Academy</div>
+                                        </div>
+                                    </div>
+                                    <form className="space-y-4" onSubmit={e => e.preventDefault()}>
+                                        <input type="text" placeholder="Full Name" className="w-full px-5 py-4 rounded-xl bg-emerald-700/50 border border-emerald-500 placeholder:text-emerald-200 focus:outline-none focus:ring-2 focus:ring-white/50" />
+                                        <button className="w-full bg-white text-emerald-700 font-bold py-4 rounded-xl hover:bg-emerald-50 transition-colors shadow-lg uppercase tracking-wider">Request Proposal</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </section>
 
                     {/* Footer */}
                     <footer className="bg-emerald-900 text-white py-12">
-                        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-                            <div className="flex items-center gap-2">
+                        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+                            <div className="flex items-center gap-3">
                                 <Icon name="leaf" className="text-emerald-400" />
                                 <span className="font-bold text-xl tracking-tight">The Green Classroom</span>
                             </div>
-                            <p className="text-emerald-200/60 text-sm">© 2024 Ismal Rodriguez. Camille’s Academy Diamond-Guyana.</p>
+                            <p className="text-emerald-200/50 text-sm">© 2024 Ismal Rodriguez. Camille’s Academy Diamond-Guyana.</p>
+                            <div className="flex gap-6">
+                                <Icon name="globe" size={20} className="text-emerald-400 hover:text-white cursor-pointer" />
+                                <Icon name="bar-chart-3" size={20} className="text-emerald-400 hover:text-white cursor-pointer" />
+                            </div>
                         </div>
                     </footer>
                 </div>
